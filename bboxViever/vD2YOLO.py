@@ -76,7 +76,7 @@ def main(source, save_img):
 def parse_opt():
     parser = argparse.ArgumentParser()
     parser.add_argument('--source', type=str, default='data/images',
-                        help='file/dir')
+                        help='path to folder containing data to analize')
     parser.add_argument('--save-img', action='store_true',
                         help='save results to \'source\'/output/*.jpg')
     opt = parser.parse_args()

@@ -2,7 +2,7 @@
 #      └── 'source'
 #               └── images
 #               └── labels
-#      └── output
+#               └── output (will be created)
 
 from PIL import Image, ImageDraw
 from pathlib import Path
@@ -66,7 +66,7 @@ def viewer(source, imgn, save_img, show_img=True):
 def parse_opt():
     parser = argparse.ArgumentParser()
     parser.add_argument('--source', type=str, default='data/images',
-                        help='filename/dir')
+                        help='path to folder containing data to analize')
     parser.add_argument('--imgn', required=True, type=str,
                         help='image name')
     parser.add_argument('--save-img', action='store_true',
