@@ -30,7 +30,7 @@ py bboxViever.py --source .\test-dir\ --imgn 0000001_02999_d_0000005 --save-img
 
 **yolo_detection** - runs YOLO model on given image and calculates IoU, use ```--conf x``` to set detection treshold to x
 ```
-py .\yolo_detection.py --source-image .\test-dir\images\0000001_02999_d_0000005.jpg --source-data .\test-dir\labels\0000001_02999_d_0000005.txt
+py yolo_detection.py --source-image .\test-dir\images\0000001_02999_d_0000005.jpg --source-data .\test-dir\labels\0000001_02999_d_0000005.txt
 ```
 
 ##
